@@ -39,8 +39,6 @@
 
 ## 🛠 Используемые технологии
 
-### 🔧 Основные технологии
-
 | Технология | Версия | Назначение |
 |:---|:---|:---|
 | **PHP** | 7.4+ | Серверный язык программирования |
@@ -49,11 +47,6 @@
 | **CSS3** | — | Стилизация и адаптивный дизайн |
 | **JavaScript** | — | Интерактивность на клиентской стороне |
 | **XAMPP** | — | Локальный сервер для разработки |
-
-### 📊 Используемые библиотеки и инструменты
-- **PHPMyAdmin** — управление базой данных
-- **MySQLi** — работа с БД в PHP
-- **AJAX** — асинхронные запросы для проверки данных
 
 ---
 
@@ -71,19 +64,19 @@
 
 ```bash
 git clone https://github.com/interiys/Website.git
-cd LaptopHub
+cd Website
 ```
 
 **2. Скопируйте проект в папку сервера**
-- **XAMPP**: `C:\xampp\htdocs\LaptopHub`
-- **OpenServer**: `C:\OpenServer\domains\LaptopHub`
+- **XAMPP**: `C:\xampp\htdocs\Website`
+- **OpenServer**: `C:\OpenServer\domains\Website`
 
 **3. Импортируйте базу данных**
 1. Откройте **phpMyAdmin** по адресу: `http://localhost/phpmyadmin`
 2. Создайте новую базу данных с названием `mydb`
 3. Импортируйте файлы:
-   - `database/catalog.sql`
-   - `database/users.sql`
+   - `catalog.sql`
+   - `users.sql`
 
 **4. Настройте подключение к БД**
 В файле `scripts/db.php` проверьте параметры подключения:
@@ -102,7 +95,7 @@ $port = 3306;
 
 **6. Откройте сайт в браузере**
 ```
-http://localhost/LaptopHub/index.php
+http://localhost/Website/index.php
 ```
 
 ---
@@ -110,45 +103,38 @@ http://localhost/LaptopHub/index.php
 ## 📁 Структура проекта
 
 ```
-LaptopHub/
+Website/
 │
 ├── 📁 frames/           # Шаблоны страниц
-│   ├── head.php         # Заголовок HTML
-│   ├── header.php       # Шапка сайта
-│   └── footer.php       # Подвал + формы авторизации
+│   ├── head.php
+│   ├── header.php
+│   └── footer.php
 │
 ├── 📁 scripts/          # PHP-скрипты
-│   ├── db.php           # Подключение к БД
-│   ├── login.php        # Авторизация
-│   ├── register.php     # Регистрация
-│   ├── exit.php         # Выход
-│   ├── checkEmail.php   # Проверка email
-│   └── checkUserName.php # Проверка имени
+│   ├── db.php
+│   ├── login.php
+│   ├── register.php
+│   ├── exit.php
+│   ├── checkEmail.php
+│   └── checkUserName.php
 │
 ├── 📁 js/               # JavaScript-скрипты
-│   ├── formScript.js    # Логика форм (AJAX)
-│   ├── slider.js        # Слайдер для товаров
-│   └── createMenu.js    # Адаптивное меню
+│   ├── formScript.js
+│   ├── slider.js
+│   └── createMenu.js
 │
-├── 📁 img/              # Изображения товаров и логотипов
-│   ├── logo/            # Логотипы
-│   ├── Msi/             # Картинки MSI
-│   ├── Asus/            # Картинки Asus
-│   ├── Tecno/           # Картинки Tecno
-│   ├── HP/              # Картинки HP
-│   └── Modern/          # Картинки MSI Modern
-│
-├── 📁 database/         # SQL-дампы
-│   ├── catalog.sql      # Таблица с товарами
-│   └── users.sql        # Таблица с пользователями
+├── 📁 img/              # Изображения
+├── 📁 logo/             # Логотипы
 │
 ├── 📄 index.php         # Главная страница
-├── 📄 Catalog.php       # Каталог ноутбуков
+├── 📄 Catalog.php       # Каталог
 ├── 📄 product.php       # Страница товара
 ├── 📄 Blog.php          # Блог
 ├── 📄 support.php       # Поддержка
 ├── 📄 user.php          # Личный кабинет
-├── 📄 style.css         # Основные стили
+├── 📄 style.css         # Стили
+├── 📄 catalog.sql       # SQL-дамп товаров
+├── 📄 users.sql         # SQL-дамп пользователей
 └── 📖 README.md         # Описание проекта
 ```
 
@@ -200,6 +186,21 @@ LaptopHub/
 
 ---
 
+## 📱 Скриншоты
+
+| Главная страница | Каталог |
+|:---:|:---:|
+| <img src="https://github.com/user-attachments/assets/71f39c69-0d45-4d24-bce0-ec59f395f37a" width="300"> | <img src="https://github.com/user-attachments/assets/1da6fd50-9f66-4d21-ba0b-8e41c51cac24" width="300"> |
+
+| Страница товара | Авторизация |
+|:---:|:---:|
+| <img src="https://github.com/user-attachments/assets/3e8f22cd-59bf-4b8a-bd90-866b736bc935" width="300"> | <img src="https://github.com/user-attachments/assets/45853c46-434c-4fa6-b378-01bb65770695" width="300"> |
+
+| Регистрация | Профиль пользователя |
+|:---:|:---:|
+| <img src="https://github.com/user-attachments/assets/5bdde7f9-118d-479e-bf63-ad162372268b" width="300"> | <img src="https://github.com/user-attachments/assets/dd942ad1-11c8-41cc-9133-c7c59edcc6d7" width="300"> |
+---
+
 ## 👤 Пользователи
 
 ### Тестовые пользователи для входа:
@@ -243,32 +244,13 @@ LaptopHub/
 
 ```bash
 git clone https://github.com/interiys/Website.git
-cd LaptopHub
+cd Website
 ```
 
-1. Copy to `C:\xampp\htdocs\LaptopHub`
-2. Import `database/catalog.sql` and `database/users.sql` to MySQL
+1. Copy to `C:\xampp\htdocs\Website`
+2. Import `catalog.sql` and `users.sql` to MySQL
 3. Start Apache and MySQL in XAMPP
-4. Open `http://localhost/LaptopHub/index.php`
-
-### 📁 Project Structure
-
-```
-LaptopHub/
-├── 📁 frames/          # Page templates
-├── 📁 scripts/         # PHP scripts
-├── 📁 js/              # JavaScript files
-├── 📁 img/             # Images
-├── 📁 database/        # SQL dumps
-├── index.php           # Home page
-├── Catalog.php         # Catalog
-├── product.php         # Product page
-├── Blog.php            # Blog
-├── support.php         # Support
-├── user.php            # Personal account
-├── style.css           # Styles
-└── README.md           # This file
-```
+4. Open `http://localhost/Website/index.php`
 
 ### 👤 Test Users
 
@@ -277,6 +259,14 @@ LaptopHub/
 | `123@123` | `123` | `123` |
 | `123@s` | `ssss` | `ssss` |
 
-> Important: Passwords in the database are stored in hashed form (SHA-256 + salt).
-
 ---
+
+## 📌 О проекте / About the Project
+
+**Status**: 🟢 Laboratory project
+
+**Author**: The author loves ferrets ;3
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/b02d24de-8dd5-41c5-9229-2060730c03e2" width="400" alt="ferret" />
+</p>
