@@ -70,7 +70,7 @@
 **1. Клонируйте репозиторий**
 
 ```bash
-git clone https://github.com/interiys/LaptopHub.git
+git clone https://github.com/interiys/Website.git
 cd LaptopHub
 ```
 
@@ -242,7 +242,7 @@ LaptopHub/
 ### 🚀 Quick Start
 
 ```bash
-git clone https://github.com/interiys/LaptopHub.git
+git clone https://github.com/interiys/Website.git
 cd LaptopHub
 ```
 
