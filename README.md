@@ -263,7 +263,7 @@ cd Website
 
 ## 📌 О проекте / About the Project
 
-**Status**: 🟢 Laboratory project
+**Status**: 🟢 Course paper
 
 **Author**: The author loves ferrets ;3
 
