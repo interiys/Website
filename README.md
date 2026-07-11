@@ -252,7 +252,7 @@ cd Website
 3. Start Apache and MySQL in XAMPP
 4. Open `http://localhost/Website/index.php`
 
-### 👤 Test Users
+###  Test Users
 
 | Email | Password | Name |
 |:---|:---|:---|
@@ -262,8 +262,6 @@ cd Website
 ---
 
 ## 📌 О проекте / About the Project
-
-**Status**: 🟢 Course paper
 
 **Author**: The author loves ferrets ;3
 
