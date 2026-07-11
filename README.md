@@ -56,7 +56,7 @@
 - **XAMPP** (или любой другой веб-сервер с PHP и MySQL)
 - **PHP 7.4+**
 - **MySQL 5.7+**
-- Браузер (Chrome, Firefox, Edge)
+- **Браузер (Chrome, Firefox, Edge)**
 
 ###  Шаги установки
 
